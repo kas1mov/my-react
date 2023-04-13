@@ -1,0 +1,11 @@
+.root {
+  padding: 32px 34px;
+  &_main {
+    display: flex;
+    gap: 66px;
+    margin-top: 59px;
+  }
+  &__body {
+    width: 100%;
+  }
+}

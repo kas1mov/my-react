@@ -1,0 +1,223 @@
+.Videos {
+  display: flex;
+  gap: 40px;
+  padding-left: 48px;
+}
+.video {
+  border-radius: 14px;
+  height: 700px;
+  width: 1363px;
+  background-color: #000;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    @include adaptive-value(font-size, 36, 32, 1);
+    @include adaptive-value(line-height, 45, 42, 1);
+    color: $textColor;
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $videosOpacity;
+  }
+  &__likes-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__like {
+    background: #ebebeb;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    // opacity: 0.3;
+  }
+  &__dezlike {
+    background: #ebebeb;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__share {
+    background: #ebebeb;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__more {
+    margin-left: 30px;
+    background: inherit;
+  }
+  &__channels{
+    display: flex;
+    justify-content: space-between;
+    @include adaptive-value(margin-top, 38, 35, 1);
+  }
+  &__channel{
+    display: flex;
+  gap: 12px;
+  &__img {
+    width: 80px;
+    height: 80px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }&__name{
+    width: 820px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: $textColor;
+    margin-bottom: 4px;
+  }
+  &__data {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $videosOpacity;
+    margin-bottom: 14px;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    @include adaptive-value(font-size, 16, 14, 1);
+    @include adaptive-value(line-height, 22, 20, 1);
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-bottom: 15px;
+  }
+  &__more {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $videosOpacity;
+    cursor: pointer;
+  }
+  }
+}
+.videos {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  &__img {
+    height: 213px;
+    width: 367px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+    }
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    @include adaptive-value(font-size, 26, 24, 1);
+    @include adaptive-value(line-height, 33, 31, 1);
+    color: $textColor;
+    margin-top: 13px;
+  }
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11px;
+    &-text {
+      font-style: normal;
+      font-weight: 400;
+      @include adaptive-value(font-size, 18, 16, 1);
+      @include adaptive-value(line-height, 23, 21, 1);
+      color: $videosOpacity;
+    }
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  &__autoplay {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    &_text {
+      font-style: normal;
+      font-weight: 700;
+      @include adaptive-value(font-size, 16, 14, 1);
+      @include adaptive-value(line-height, 20, 18, 1);
+      letter-spacing: 1px;
+      color: $textColor;
+    }
+    &_btn {
+      background: $btnBackColor;
+      mix-blend-mode: normal;
+      opacity: 0.3;
+      border-radius: 14px;
+      height: 28px;
+      width: 44px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: $textColor;
+  }
+  &__btn {
+    background-color: #2196f3;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.237602);
+  }
+}
